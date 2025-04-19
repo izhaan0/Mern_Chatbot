@@ -68,7 +68,7 @@ async function sendMessage() {
         // Display the typing indicator while waiting for the OpenAI's response
         displayTypingIndicator();
 
-        const response = await fetch('https://mern-chatbot-backend-a87o.onrender.com', {
+        const response = await fetch('https://mern-chatbot-backend-a87o.onrender.com/message', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
